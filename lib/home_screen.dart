@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'info_gesture/screen/info_windows_screen.dart';
+import 'map_gesture/map_gestures_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,6 +15,7 @@ class HomeScreen extends StatelessWidget {
         children: const [
           _SectionTitle('Part 1 — Info Windows, Gestures'),
           _DemoButton(label: 'Info Windows', screen: InfoWindowsScreen()),
+          _DemoButton(label: 'Map Gestures', screen: MapGesturesScreen()),
         ],
       ),
     );
@@ -31,9 +33,9 @@ class _SetupNote extends StatelessWidget {
         padding: EdgeInsets.all(16),
         child: Text(
           'New to maps? Open Part 3 first — it builds the map the other parts '
-              'decorate.\n\n'
-              'A gray square means the API key is still the placeholder. Replace '
-              'YOUR_GOOGLE_MAPS_API_KEY, then stop the app and run it again.',
+          'decorate.\n\n'
+          'A gray square means the API key is still the placeholder. Replace '
+          'YOUR_GOOGLE_MAPS_API_KEY, then stop the app and run it again.',
           style: TextStyle(fontSize: 13),
         ),
       ),
