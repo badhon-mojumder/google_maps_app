@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-import '../places/place.dart';
+import '../../place.dart';
 
 class InfoWindowsScreen extends StatefulWidget {
   const new({super.key});

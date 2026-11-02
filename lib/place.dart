@@ -70,6 +70,15 @@ class Places {
     university,
   ];
 
+  /// Campus Shuttle Routes in order.
+  static const List<Landmark> shuttleRoute = [
+    shahidMinar,
+    lalbaghFort,
+    ahsanManzil,
+    hatirjheel,
+    parliament,
+  ];
+
   /// First camera frame. Later moves go through GoogleMapController.
   static const CameraPosition openingCamera = CameraPosition(
     target: LatLng(23.740, 90.400),
